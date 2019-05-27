@@ -18,31 +18,19 @@ A manual starter for minimalists &amp; fundmentalists.
 
 [TOC]
 
-[TypeScript-Electron-Vue-Webpack-Starter](#typescript-electron-vue-webpack-starter)
-
-​	[Index](#index)
-
-​	[Basic Configuration](#basic-configuration)
-
-​		[Initialize your project](#initialize-your-project)
-
-​		[Install dependencies](#install-dependencies)
-
-​		[Add a TypeScript configuration file](#add-a-typescript-configuration-file)
-
-​		[Adding a Webpack configuration file](#adding-a-webpack-configuration-file)
-
-​		[Add build & debug scripts](#add-build--debug-scripts)
-
-​		[Create a basic project](#create-a-basic-project)
-
-​	[Component Style(Optional)](#component-styleoptional)
-
-​		[Simple Components](#simple-components)
-
-​		[Single File Components(SFCs)](#single-file-componentssfcs)
-
-​			[Using decorators](#using-decorators)
+- [TypeScript-Electron-Vue-Webpack-Starter](#typescript-electron-vue-webpack-starter)
+  - [Index](#index)
+  - [Basic Configuration](#basic-configuration)
+    - [Initialize your project](#initialize-your-project)
+    - [Install dependencies](#install-dependencies)
+    - [Add a TypeScript configuration file](#add-a-typescript-configuration-file)
+    - [Adding a Webpack configuration file](#adding-a-webpack-configuration-file)
+    - [Add build & debug scripts](#add-build--debug-scripts)
+    - [Create a basic project](#create-a-basic-project)
+  - [Component Style(Optional)](#component-styleoptional)
+    - [Simple Components](#simple-components)
+    - [Single File Components(SFCs)](#single-file-componentssfcs)
+      - [Using decorators](#using-decorators)
 
 ## Basic Configuration
 
