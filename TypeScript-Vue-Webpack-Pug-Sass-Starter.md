@@ -82,12 +82,11 @@ const path = require('path')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = {
-    entry: './src/Renderer.ts',
+    entry: './src/Index.ts',
     mode: 'development',
-    target: 'electron-renderer',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'Renderer.js'
+        filename: 'Index.js'
     },
     module: {
         rules: [
@@ -155,7 +154,7 @@ package.json
 
 ## Create a basic project
 
-src/Index.html
+Index.html
 
 ```html
 <!doctype html>
@@ -166,12 +165,12 @@ src/Index.html
 <body>
     <div id="app"></div>
 </body>
-<script src="../dist/Renderer.js"></script>
+<script src="./dist/Index.js"></script>
 
 </html>
 ```
 
-src/Renderer.ts
+src/Index.ts
 
 ```typescript
 import Vue from "vue";
