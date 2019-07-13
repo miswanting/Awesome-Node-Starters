@@ -82,12 +82,12 @@ webpack.config.js
 ```js
 const path = require('path')
 mainConfig = {
-    entry: './src/Main.ts',
+    entry: './src/main.ts',
     mode: 'development',
     target: 'electron-main',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'Main.js'
+        filename: 'main.js'
     },
     module: {
         rules: [
@@ -103,12 +103,12 @@ mainConfig = {
     }
 }
 rendererConfig = {
-    entry: './src/Renderer.ts',
+    entry: './src/renderer.ts',
     mode: 'development',
     target: 'electron-renderer',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'Renderer.js'
+        filename: 'renderer.js'
     },
     module: {
         rules: [
@@ -152,7 +152,7 @@ package.json
 
 ```json
 {
-    "main": "dist/Main.js",
+    "main": "dist/main.js",
     "scripts": {
         "build": "webpack",
         "debug": "npx electron .",
@@ -163,7 +163,7 @@ package.json
 
 ### Create a basic project
 
-src/Index.html
+src/index.html
 
 ```html
 <!doctype html>
@@ -174,12 +174,12 @@ src/Index.html
 <body>
     <div id="app"></div>
 </body>
-<script src="../dist/Renderer.js"></script>
+<script src="../dist/renderer.js"></script>
 
 </html>
 ```
 
-src/Main.ts
+src/main.ts
 
 ```typescript
 import { app, BrowserWindow } from "electron";
@@ -194,7 +194,7 @@ function createWindow() {
     });
 
     // and load the index.html of the app.
-    mainWindow.loadFile("./src/Index.html");
+    mainWindow.loadFile("./src/index.html");
 
     // Open the DevTools.
     mainWindow.webContents.openDevTools();
@@ -235,7 +235,7 @@ app.on("activate", () => {
 // code. You can also put them in separate files and require them here.
 ```
 
-src/Renderer.ts
+src/renderer.ts
 
 ```typescript
 import Vue from "vue";
@@ -257,7 +257,7 @@ let v = new Vue({
 
 ### Simple Components
 
-src/Renderer.ts
+src/renderer.ts
 
 ```typescript
 import Vue from "vue";
@@ -396,7 +396,7 @@ rendererConfig = {
 module.exports = [mainConfig, rendererConfig]
 ```
 
-src/Renderer.ts
+src/renderer.ts
 
 ```typescript
 import Vue from "vue";
