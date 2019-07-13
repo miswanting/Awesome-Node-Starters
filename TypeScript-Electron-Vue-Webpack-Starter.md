@@ -63,7 +63,7 @@ tsconfig.json
         "outDir": "./dist/",
         "sourceMap": true,
         "strict": true,
-        "noImplicitAny":true,
+        "noImplicitAny": true,
         "noImplicitReturns": true,
         "module": "ES6",
         "moduleResolution": "Node",
