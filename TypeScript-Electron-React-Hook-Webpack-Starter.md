@@ -31,7 +31,7 @@ npm init
 ### Install dependencies
 
 ```bash
-npm i -D typescript electron webpack webpack-cli react react-dom @types/react @types/react-dom awesome-typescript-loader source-map-loader
+npm i -D typescript electron webpack webpack-cli react react-dom @types/react @types/react-dom ts-loader source-map-loader
 ```
 
 ### Add a TypeScript configuration file
